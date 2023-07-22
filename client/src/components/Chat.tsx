@@ -40,7 +40,7 @@ const Chat: React.FC<Props> = ({ socket, username, room }) => {
             console.log(data);
             setMessageList([...messageList, data]);
         })
-    }, [socket])
+    }, [socket, messageList])
 
     return (
         <div className='chat-window'>
